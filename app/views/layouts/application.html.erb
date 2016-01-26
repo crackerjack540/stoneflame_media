@@ -3,7 +3,12 @@
 <head>
   <title>StoneFlame</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+<!-- Custom styles for this template -->
+    <link href="application.css.scss" rel="stylesheet">
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= render 'layouts/header' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
