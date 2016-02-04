@@ -1,0 +1,7 @@
+<h1> Please leave your name and a topic you would like us to discuss. <h1>
+<hr>
+	<%= form_for Topic.new do |f| %>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+
+		<% end -%>
