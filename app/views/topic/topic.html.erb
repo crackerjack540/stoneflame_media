@@ -1,7 +1,16 @@
-<h1> Please leave your name and a topic you would like us to discuss. <h1>
-<hr>
-	<%= form_for Topic.new do |f| %>
-		<%= f.label :name %>
-		<%= f.text_field :name %>
+<!DOCTYPE html>
+<html lang="en">
 
-		<% end -%>
+<h1> Please leave your name and a topic you would like us to discuss. </h1>
+
+	<form>
+		Name: <textarea rows="1" cols="50" name="name">
+		</textarea> <br />
+		Topic: <textarea rows="2" cols="50" name="topic">
+		Suggest a topic...
+		</textarea>
+		<imput type="button" name="submit" value="Submit" />
+
+	</form>
+
+</html>
