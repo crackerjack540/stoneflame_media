@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160203224007) do
+ActiveRecord::Schema.define(version: 20160208051455) do
 
   create_table "podcast_buckets", force: :cascade do |t|
     t.datetime "created_at", null: false

@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   get 'mainpages/podcast'
   get 'subpages/faq'
   get 'subpages/contact'
-  get 'topic/topic'
+  get 'topics/new'
+ 
 
-  resources :topic
+  resources :topics
 end

@@ -21,14 +21,14 @@
 
 nav {
   font-size: 1.8em;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
-#twitter {
+div.twitter {
   float: right;
-  padding-seft: 50px;
-
-}
+  padding-top: 8px;
+  padding-left: 30px;
+ }
 
 /* body */
 
@@ -53,8 +53,12 @@ h2 {
   margin-left: 75px;
   background-color: white;
   text-align: center;
-
 }
+
+div.create_topic {
+  padding-top: 100px;
+}
+
 
 /* footer */
 
@@ -62,6 +66,6 @@ footer {
   background-color: #444;
   text-align: left;
   padding-top: 25px;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
   font-size: 1.3em;  
 }
