@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   get 'subpages/faq'
   get 'subpages/contact'
   get 'topics/new'
+  get 'topics/list'
  
 
-  resources :topics
+  resources :new_topic
 end

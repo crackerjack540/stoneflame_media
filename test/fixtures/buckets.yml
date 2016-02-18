@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  topic: MyString
+  topic: MyText
 
 two:
   name: MyString
-  topic: MyString
+  topic: MyText

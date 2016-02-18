@@ -30,6 +30,8 @@ gem 'bootstrap-sass'
 
 gem 'simple_form'
 
+gem 'table_for_collection'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

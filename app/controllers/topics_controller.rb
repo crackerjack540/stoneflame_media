@@ -1,27 +1,20 @@
 class TopicsController < ApplicationController
 
 def new
-end
-
-def new
-	@topic = Topic.new
-end
-
-def update
-	@topic = Topic.update(topic_params)
-	redirect_to @topic 
+	@bucket = Bucket.new
 end
 
 def create
-	@topic = Topic.new(params[:topic])
-
-	@topic.save
-	redirect_to @topic
+	@bucket = Bucket.new(bucket_params)
 end
 
-def destroy
-	@topic = Topic.find(params[:id])
-	@topic.destroy
-	redirect_to topic_path
+private
+
+def bucket_params
+	params.require[:bucket].permit(:name, :topic)
 end
+
+def list
+end
+
 end
