@@ -11,30 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160218214839) do
+ActiveRecord::Schema.define(version: 20160222025522) do
 
   create_table "buckets", force: :cascade do |t|
     t.string   "name"
     t.text     "topic"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "new_topics", force: :cascade do |t|
-    t.string   "name"
-    t.text     "topic"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "podcast_buckets", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "topics", force: :cascade do |t|
-    t.string   "name"
-    t.string   "topic"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

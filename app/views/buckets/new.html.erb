@@ -1,9 +1,9 @@
 
 
 <div class="create_topic"
-<%= simple_form_for :buckets do |f| %>
+<%= simple_form_for @bucket do |f| %>
 	<%= f.input :name %>
 	<%= f.input :topic %>
 	<%= f.button :submit %>
-</div>
 <% end %>
+</div>

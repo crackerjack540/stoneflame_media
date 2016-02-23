@@ -1,4 +1,7 @@
-class TopicsController < ApplicationController
+class BucketsController < ApplicationController
+
+def new
+end
 
 def new
 	@bucket = Bucket.new
@@ -11,7 +14,7 @@ end
 private
 
 def bucket_params
-	params.require[:bucket].permit(:name, :topic)
+	params.require[:buckets].permit(:name, :topic)
 end
 
 def list
