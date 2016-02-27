@@ -19,7 +19,7 @@ end
 private
 
 def bucket_params
-	params.require[:buckets].permit(:name, :topic)
+	params.require[:bucket].permit(:name, :topic)
 end
 
 def list

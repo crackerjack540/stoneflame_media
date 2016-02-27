@@ -8,7 +8,7 @@ def new
 end
 
 def create
-	@message = Message.new(messafe_params)
+	@message = Message.new(message_params)
 end
 
 
