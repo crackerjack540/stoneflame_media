@@ -8,7 +8,20 @@ def new
 end
 
 def create
-	@message = current_user.messages.build(message_params)
+	@message = Message.new(message_params)
+	if @message.save
+		redirect_to messages_path
+	else 
+		render 'new'
+	end
+end
+
+def index
+	@messages = Message.all.order("created_at DESC")
+end
+
+def show
+	@message = Message.find(params[:id])
 end
 
 private

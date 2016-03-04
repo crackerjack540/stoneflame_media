@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
 def create
 	@message = Messafe.find(params[:messafe_id])
 	@comment = @message.comments.create(comment_params)
-	@comment.user_ide = current_user.id
+	@comment.user_id = current_user.id
 
 	if @comment.save
 		redirect_to message_path(@message)

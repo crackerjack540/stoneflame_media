@@ -1,9 +1,6 @@
 class BucketsController < ApplicationController
 
 def new
-end
-
-def new
 	@bucket = Bucket.new
 end
 
@@ -30,7 +27,5 @@ private
 def bucket_params
 	params.require(:bucket).permit(:name, :topic)
 end
-
-
 
 end

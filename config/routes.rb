@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   resources :messages do
     resources :comments
   resources :buckets
-  resources :users
+
 end
 end
