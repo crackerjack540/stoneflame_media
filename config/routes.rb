@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+
   root 'mainpages#home'
   get 'mainpages/podcast'
   get 'subpages/faq'
