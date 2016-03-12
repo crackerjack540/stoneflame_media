@@ -30,9 +30,14 @@ div.twitter {
   padding-left: 30px;
  }
 
+ div.signup {
+  float: right;
+ }
+
 /* body */
 
-body {border: 50px solid #444;
+body {
+  border: 50px solid #444;
 }
 
 h1 {
@@ -53,6 +58,10 @@ h2 {
   margin-left: 75px;
   background-color: white;
   text-align: center;
+}
+
+h3 {
+  padding-top: 60px;
 }
 
 div.create_topic {
