@@ -30,9 +30,6 @@ div.twitter {
   padding-left: 30px;
  }
 
- div.signup {
-  float: right;
- }
 
 /* body */
 
@@ -65,11 +62,24 @@ h3 {
 }
 
 div.create_topic {
-  padding-top: 100px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+div.topic_index {
+  padding-bottom: 30px;
+  padding-left: 30px;
 }
 
 div.newmessage {
   padding-top: 100px;
+}
+
+div.podcastplayer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  padding-left: 30px;
 }
 
 /* footer */
