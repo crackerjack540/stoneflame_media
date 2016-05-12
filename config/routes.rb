@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :users
+  resources :users
   root 'mainpages#home'
   get 'mainpages/podcast'
   get 'subpages/faq'
