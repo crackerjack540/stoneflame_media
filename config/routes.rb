@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :users
+  resources :sessions
   resources :users
   root 'mainpages#home'
   get 'mainpages/podcast'
