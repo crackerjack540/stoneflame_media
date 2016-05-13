@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
@@ -22,7 +21,7 @@ ActiveRecord::Schema.define(version: 20160229040753) do
   end
 
 end
-=======
+ 
 # encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
@@ -46,4 +45,3 @@ ActiveRecord::Schema.define(version: 20160229040753) do
   end
 
 end
->>>>>>> f27fccdf524fb7b795100c7668d0261f64d7eb7c
