@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :sessions
-  resources :users
   root 'mainpages#home'
   get 'mainpages/podcast'
   get 'subpages/faq'
@@ -9,6 +7,12 @@ Rails.application.routes.draw do
   get 'buckets/new'
   get 'buckets/index'
   get 'messages/new'
- 
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
   resources :buckets
- end
+  resources :messages do
+    resources :comments
+  end
+  resources :sessions
+  resources :users
+end

@@ -7,10 +7,11 @@
    
       
       <ul class="nav navbar-nav navbar-center" data-no-turbolink>
-        <li><div class="flame"><%= image_tag('flame.jpg', :height => 100, :alt => 'x') %></div></li>
+        <li><div class="flame"><%= image_tag('flame.jpg', :height => 40, :alt => 'x') %></div></li>
         <li><%= link_to "Home",   root_path %></li>
         <li><%= link_to "Podcast", mainpages_podcast_path %></li>
         <li><%= link_to "Topic ucket", buckets_index_path %></li>
+        <li><%= link_to "Discussion", messages_path %></li>
       </ul>
 
     <% if current_user %>
@@ -18,8 +19,8 @@
       Hello, <%= current_user.username %>.
       <%= link_to "Log Out", new_session_path("current"), method: "delete" %>
       <% else %>
-    <%= link_to "Create Account", new_user_path %> 
-    <%= link_to "Login", new_session_path %>
+        <%= link_to "Login", new_session_path %>
+        <%= link_to "Create Account", new_user_path %> 
       <% end %>
     </div>
 
