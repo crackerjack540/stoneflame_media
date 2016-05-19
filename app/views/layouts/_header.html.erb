@@ -14,7 +14,7 @@
         <li><%= link_to "Discussion", messages_path %></li>
       </ul>
 
-    <% if current_user %>
+  <div id= "signup" data-no-turbolink>  <% if current_user %>
     <div id="user_header">
       Hello, <%= current_user.username %>.
       <%= link_to "Log Out", new_session_path("current"), method: "delete" %>
@@ -22,7 +22,7 @@
         <%= link_to "Login", new_session_path %>
         <%= link_to "Create Account", new_user_path %> 
       <% end %>
-    </div>
+    </div></div>
 
       <div class="twitter"> 
           <a href="https://twitter.com/stoneflamemedia" class="twitter-follow-button" data-show-count="false">  Follow @stoneflamemedia</a>
