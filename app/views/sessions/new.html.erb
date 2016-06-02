@@ -2,7 +2,7 @@
 
 
 <div class="login">
-  <%= simple_form_for '/login' do |f| %>
+  <%= simple_form_for :sessions do |f| %>
   	<%= f.input :username %>
   	<%= f.input :password %>
   	<%= f.button :submit, "Login" %>
