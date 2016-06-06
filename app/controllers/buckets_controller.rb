@@ -1,11 +1,13 @@
 class BucketsController < ApplicationController
 
+before_action :find_bucket, only: [:edit, :destroy] 
+
 def new
-	@bucket = Bucket.new
+	@bucket = current_user.buckets.build
 end
 
 def create
-	@bucket = Bucket.new(bucket_params)
+	@bucket = current_user.buckets.build(bucket_params)
 	if @bucket.save
 		redirect_to buckets_index_path
 	else
@@ -21,6 +23,18 @@ def show
 	@bucket = Bucket.find(params[:id])
 end
 
+def edit
+end
+
+def update
+	@bucket.update(bucket_params)
+	redirect_to buckets_index_path
+end
+
+def destroy
+    @bucket.destroy(bucket_params)
+    redirect_to buckets_index_path
+end
 
 private
 
@@ -28,4 +42,7 @@ def bucket_params
 	params.require(:bucket).permit(:name, :topic)
 end
 
+def find_bucket
+	@bucket = Bucket.find(params[:id])
+end
 end

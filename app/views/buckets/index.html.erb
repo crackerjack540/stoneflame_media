@@ -1,11 +1,19 @@
 <body>
+
+<h4> Please create an account to submit your suggestions for topics to be discussed on the podcast!</h4>
+
 <div id="topic_index">
 <% @buckets.each do |bucket| %>
 <h3> <%= bucket.name %></h3>
 <h4> <%= bucket.topic %></h4>
 <% end %>
-
 </div>
+
+
 </body>
 
+<% if current_user %>
+
 <p><%= link_to "Suggest a Topic", buckets_new_path, class: "btn btn-default" %></p>
+
+<% end %>

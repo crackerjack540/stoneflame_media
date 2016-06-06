@@ -3,7 +3,9 @@ before_action :find_message
 before_action :find_comment, only: [:edit, :update, :destroy]
 
 def create
+   @comment = Message.find(params[:message_id])
    @comment = @message.comments.create(comment_params)
+   @comment.user_id = current_user.id
    if @comment.save
    	redirect_to message_path(@message)
    else 
