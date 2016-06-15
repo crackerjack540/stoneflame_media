@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'bcrypt-ruby'
+gem 'paperclip', '~> 5.0.0.beta1'
 
 
 group :development, :test do

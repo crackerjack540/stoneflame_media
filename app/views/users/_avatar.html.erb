@@ -1,0 +1,4 @@
+<%= simple_form_for @user, url: user_path do |form| %>
+  <%= form.input :avatar, as: :file %>
+  <%= form.button :submit %>
+<% end %>
